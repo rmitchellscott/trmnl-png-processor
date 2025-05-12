@@ -1,6 +1,8 @@
-FROM theidledeveloper/aws-cli-alpine:2.27.11-alpine3.17
+# FROM theidledeveloper/aws-cli-alpine:2.15.14-r0-alpine3.19
+FROM alpine:3.21
 
 RUN apk add --no-cache \
+      aws-cli \
       imagemagick \
       bash \
       jq
